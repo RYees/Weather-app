@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Map with Public Api</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Weather App</header>
+    <!-- Use the search field when using the app.js script file-->
+    <!-- <div id="insert">
+           <input type="text" id="myInput" value="Ethiopia">
+           <button>Search</button>
+       </div> -->
+    <div class="two-container">
+      <div id="body-container" data-aos="fade-down">
+        <div id="weather-container">
+          <div class="title">Ethiopia</div>
+          <div class="date"></div>
+          <div class="dateName"></div>
+
+          <div class="degree">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-image"
+            />
+            <span class="describe">light rain</span>
+            <div class="num">98&#176; C</div>
+          </div>
+          <div class="details">
+            <div class="pressure">Night:435</div>
+            <div class="humidity">Day:554</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="days" data-aos="fade-right" data-aos-delay="200">
+        <div class="weather-forecast">
+          <div class="template">
+            <div class="day">Mon</div>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              class="w-icon"
+            />
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="day">Tue</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast">
+          <div class="day">Wed</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast">
+          <div class="day">Thur</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast">
+          <div class="day">Fri</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+        <div class="weather-forecast">
+          <div class="day">Sat</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+          <div class="temp">Night - 25.6&#176; C</div>
+          <div class="temp">Day - 35.6&#176; C</div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript Animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // AOS.init();
+      AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 1500, // values from 0 to 3000, with step 50ms
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+      });
+    </script>
+    <!-- moment package for time date converter... -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
