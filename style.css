@@ -200,7 +200,7 @@ img {
     flex-direction: column;
     height: 600%;
     width: 150%;
-  }
+   }
   body {
     overflow-y: visible;
     /* overflow-x: hidden; */
@@ -222,22 +222,18 @@ img {
   }
   .num {
     font-size: 4rem;
-    margin-top: -100px;
+    margin-top: 0;
   }
-  .describe {
-    margin-top: 0px;
-    font-size: 15px;
-    margin-left: -260px;
-  }
+ 
   .degree {
-    flex-direction: column;
+    margin-left: -5px;
   }
   img {
     width: 100px;
   }
 
   .details {
-    margin: 11% 3%;
+    margin: 5% 3%;
   }
   .weather-forecast {
     width: 300px;
